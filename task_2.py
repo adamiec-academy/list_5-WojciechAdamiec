@@ -5,4 +5,4 @@ def unique(data):
         if elem not in is_present:
             result.append(elem)
             is_present.add(elem)
-    return data
+    return result
