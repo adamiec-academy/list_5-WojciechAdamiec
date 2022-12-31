@@ -1,10 +1,10 @@
 def longest_word():
-    longest_word = None
-    longest_length = 0
-    for line in open("words.txt"):
+    longest_word = ""
+    
+    for line in open("words.txt", encoding="utf-8"):
         word = line.strip()
-        word_len = len(word)
-        if word_len > longest_length:
-            longest_length = word_len
+        
+        if len(word) > len(longest_word):
             longest_word = word
+
     return longest_word
